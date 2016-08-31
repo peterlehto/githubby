@@ -1,0 +1,104 @@
+body > .grid {
+  height: 100%; }
+
+.ui.dashboard {
+  padding-top: 60px; }
+
+.octocat {
+  margin-bottom: 20px; }
+
+#reload {
+  margin-top: 15px; }
+
+/*
+ * Modal Overlay
+ */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  background: rgba(25, 36, 48, 0.85);
+  z-index: 100;
+  text-align: center;
+  color: #fff; }
+
+.modal-overlay.footer-trans {
+  background: transparent;
+  padding-top: 0px; }
+
+.modal-overlay span {
+  font-size: 18px;
+  display: table-cell;
+  vertical-align: middle; }
+
+.modal-overlay.active {
+  display: table; }
+
+/*
+ * Circle Animation
+ */
+#circleG {
+  width: 116.66666666666667px;
+  margin: 15px auto 0px; }
+
+.circleG {
+  background-color: #fff;
+  float: left;
+  height: 25px;
+  margin-left: 13px;
+  width: 25px;
+  -moz-animation-name: bounce_circleG;
+  -moz-animation-duration: 1.35s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: linear;
+  -moz-border-radius: 17px;
+  -webkit-animation-name: bounce_circleG;
+  -webkit-animation-duration: 1.35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  -webkit-border-radius: 17px;
+  -ms-animation-name: bounce_circleG;
+  -ms-animation-duration: 1.35s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: linear;
+  -ms-border-radius: 17px;
+  -o-animation-name: bounce_circleG;
+  -o-animation-duration: 1.35s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: linear;
+  -o-border-radius: 17px;
+  -webkit-animation-name: bounce_circleG;
+  animation-name: bounce_circleG;
+  -webkit-animation-duration: 1.35s;
+  animation-duration: 1.35s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  animation-direction: linear;
+  border-radius: 17px; }
+
+.circleG_1 {
+  -webkit-animation-delay: 0.27s;
+  animation-delay: 0.27s; }
+
+.circleG_2 {
+  -webkit-animation-delay: 0.63s;
+  animation-delay: 0.63s; }
+
+.circleG_3 {
+  -webkit-animation-delay: 0.8099999999999999s;
+  animation-delay: 0.8099999999999999s; }
+
+@-webkit-keyframes bounce_circleG {
+  50% {
+    background-color: #4794CC; } }
+
+@keyframes bounce_circleG {
+  50% {
+    background-color: #4794CC; } }
+
+/*# sourceMappingURL=app.css.map */

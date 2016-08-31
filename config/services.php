@@ -35,4 +35,10 @@ return [
         'secret' => '',
     ],
 
+    'github' => [
+        'client_id' => '24fb4a24b77ad1a1b370',
+        'client_secret' => '36058bf6f9414d1e300b870828996d8305378411',
+        'redirect' => 'http://localhost:7777/auth/github/callback',
+    ],
+
 ];

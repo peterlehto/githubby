@@ -41,6 +41,12 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->singleton('Github\Client', function(){
+  $client = new Github\Client();
+
+  return $client;
+});
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
