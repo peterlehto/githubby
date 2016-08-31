@@ -1,9 +1,42 @@
-## Githubby
+## GitHubby
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Githubby connects to your github account using OAuth. Once authenticated you'll be displayed a random repository you have access to along with the last 3 commit messages. 
 
-Githubby connects to your github account using OAuth giving you access to your latest repository.
+### Requirements
+
++ Vagrant 1.8.5
++ VirtualBox >=4.3.336 
+
+**Note**: The application uses local file storage as cache please make sure the storage folder is writable.
+
+### Setup
+
+1. `git clone https://github.com/peterlehto/githubby.git`
+
+2. `composer install`
+
+3. create `.env` for the project
+
+4. `php vendor/bin/homestead make`
+
+5. `vagrant up`
+
+6. `http://localhost:7777/`
+
+
+#### .env example 
+
+```
+APP_ENV=local
+APP_DEBUG=true
+APP_KEY=WfI3OSymWly1Tagcs7U8yXqu1gpqPDNv
+
+DB_HOST=localhost
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+```
