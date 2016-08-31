@@ -1,21 +1,21 @@
 ## GitHubby
 
-Githubby connects to your github account using OAuth. Once authenticated you'll be displayed a random reposity you have access to along with the last 3 commit messages. 
+Githubby connects to your github account using OAuth. Once authenticated you'll be displayed a random repository you have access to along with the last 3 commit messages. 
 
 ### Requirements
 
 + Vagrant 1.8.5
 + VirtualBox >=4.3.336 
 
-Note: The application uses local file storage as cache please make sure the storage folder is writable. 
+**Note**: The application uses local file storage as cache please make sure the storage folder is writable.
 
 ### Setup
 
-1 .`git clone https://github.com/peterlehto/githubby.git`
+1. `git clone https://github.com/peterlehto/githubby.git`
 
 2. `composer install`
 
-3. `create .env`
+3. create `.env` for the project
 
 4. `php vendor/bin/homestead make`
 
@@ -39,5 +39,4 @@ DB_PASSWORD=secret
 CACHE_DRIVER=file
 SESSION_DRIVER=file
 QUEUE_DRIVER=sync
-
 ```
